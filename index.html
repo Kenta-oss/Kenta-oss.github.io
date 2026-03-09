@@ -14,7 +14,7 @@
 <nav>
     <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#menu">Productos</a></li>
+        <li><a href="carrito/productos.html>Productos">Productos</a></li>
         <li><a href="#ubicacion">Ubicación</a></li>
         <li><a href="carrito/registro.html">Registro</a></li>
         <br><li><a href="carrito/carro.html"> <img src="https://cdn-icons-png.flaticon.com/512/3050/3050238.png" width="50"></a></li>
@@ -49,7 +49,6 @@
             <img src="https://www.starbucks.pe/_next/image?url=https%3A%2F%2Fstb-content-pe-prd-bucket.s3.us-east-1.amazonaws.com%2Fimages%2Fproducts%2Fgalleta-rellena-de-crema-de-avellanas-1763074321978.jpg&w=128&q=75">
             <img src="https://www.starbucks.pe/_next/image?url=https%3A%2F%2Fstb-content-pe-prd-bucket.s3.us-east-1.amazonaws.com%2Fimages%2Fproducts%2Fmuffin-de-naranja-chocochips-1763074320659.jpg&w=128&q=75">
             <section>
-                <a href="carrito/productos.html"><b> <h2>MÁS PRODUCTOS</h2></b></a>
                     <table border 1x1>
         <thead>
             <tr>
@@ -102,12 +101,12 @@
         <label>Elige tu Combo</label>
         <br><br>
         <label>Nombre del Cliente:</label>
-        <input name="Cliente">
+        <input name="Cliente" required>
         <br><label id="ubicacion">Dirección:</label>
-        <input name="Dirección">
+        <input name="Dirección" required>
         <br><br>
-        <input type="text" placeholder="Ingrese Usuario">
-        <br><input type="password" placeholder="contraseña">
+        <input type="text" placeholder="Ingrese Usuario" required>
+        <br><input type="password" placeholder="contraseña" required>
         <br><br>
         <select placeholder="Bebidas">
             <option value="Opcion 1">Café</option>
@@ -147,4 +146,5 @@
 </body>
 
 </html>
+
 
