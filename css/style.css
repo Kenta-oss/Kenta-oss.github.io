@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: rgb(233, 143, 9);
+    text-align: center;
+}
+.borde{
+    margin: 100px;
+    padding: 15px;
+    background-color: rgb(255, 189, 66);
+    color: rgb(255, 255, 255);
+    right: 100px;
+}
+nav{
+    background-color: rgb(255, 189, 66);
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+}
+video{
+    margin: 5px;
+}
+a:hover{
+    background-color: rgb(82, 34, 2);
+}
+a{
+    text-decoration: none;
+}
+section{
+    text-align: center;
+}
+th{
+    background-color: rgb(255, 174, 51);
+    color: rgb(92, 52, 0);
+}
+td{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
