@@ -1,6 +1,29 @@
-header{
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+.frappuccinos {
+    background-color: rgb(124, 86, 36);
+    padding: 20px;
+    color: rgb(77, 48, 11);
+    margin: 10px;
+    border: 1px solid #b96402;
+    width: 800px;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(250, 185, 101), rgb(131, 79, 19));
+}
+body header{
+    padding: 5px;
+    color: rgb(58, 40, 20);
+    margin: 2px;
+    width: 360px;
+    height: 70px;
+    min-height: 60px;
+   
+}
+h3 {
+    color: rgb(73, 51, 22);
+}
+.carrito {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
