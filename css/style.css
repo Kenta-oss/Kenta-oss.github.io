@@ -1,113 +1,131 @@
-*{
+/* 1. CONFIGURACIÓN GENERAL - Uniforme en todo el sitio */
+* {
+    box-sizing: border-box; /* Importante para el espaciado */
+}
+
+body {
+    /* MISMA FUENTE DE LETRA EN TODA LA PÁGINA */
+    font-family: 'Cambria', 'Georgia', serif; /* Fuente elegante tipo serif, similar a tus imágenes */
+    background-color: #F5F5DC; /* Crema: Fondo principal */
+    color: #3E2723; /* Marrón Oscuro: Texto principal */
     margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
-header{
-    background-color: rgb(233, 143, 9);
+
+/* 2. ENCABEZADO (HEADER) */
+header {
+    background-color: #3E2723; /* Marrón Oscuro */
+    color: #F5F5DC; /* Crema para el texto */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #C5A059; /* Detalle en Dorado Mate */
+}
+
+/* 3. NAVEGACIÓN (NAV) - ESTILO COMO LA SEGUNDA IMAGEN */
+nav {
+    background-color: #C5A059; /* Dorado Mate - Color principal del fondo del NAV */
+    padding: 15px 0; /* Espaciado vertical similar a la imagen */
     text-align: center;
 }
-.borde{
-    margin: 100px;
-    padding: 15px;
-    background-color: rgb(255, 189, 66);
-    color: rgb(255, 255, 255);
-    right: 100px;
-}
-nav{
-    background-color: rgb(255, 189, 66);
-    margin: 0px;
-    padding: 15px;
-    text-align: center;
-}
-video{
-    margin: 5px;
-}
-a:hover{
-    background-color: rgb(82, 34, 2);
-}
-a{
+
+nav a {
     text-decoration: none;
-}
-section{
-    text-align: center;
-}
-th{
-    background-color: rgb(255, 174, 51);
-    color: rgb(92, 52, 0);
-}
-td{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-*{
-    margin: 0;
-}
-header{
-    background-color: rgb(233, 143, 9);
-    text-align: center;
-}
-.borde{
-    margin: 100px;
-    padding: 15px;
-    background-color: rgb(255, 189, 66);
-    color: rgb(255, 255, 255);
-    right: 100px;
-}
-nav{
-    background-color: rgb(255, 189, 66);
-    margin: 0px;
-    padding: 15px;
-    text-align: center;
-}
-video{
-    margin: 5px;
-}
-a:hover{
-    background-color: rgb(82, 34, 2);
-}
-a{
-    text-decoration: none;
-}
-section{
-    text-align: center;
-}
-th{
-    background-color: rgb(255, 174, 51);
-    color: rgb(92, 52, 0);
-}
-td{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3E2723; /* Marrón Oscuro para el texto */
+    font-size: 1.1em;
+    margin: 0 40px; /* Gran espaciado horizontal entre elementos */
+    font-weight: bold;
+    display: inline-block; /* Ayuda con el espaciado horizontal */
 }
 
-
-.contenedor-footer {
-    width: 95%;
-    margin: 0 auto;
-    padding: 20px 0;
+/* 4. CONTENIDO PRINCIPAL (MAIN) */
+main {
+    max-width: 900px; /* Un poco más ancho para dar aire */
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Blanco para que las fotos resalten */
+    border: 1px solid #D7CCC8;
+    border-radius: 5px;
 }
 
-.columna {
-    float: left;
-    width: 33.3%;
-    box-sizing: border-box;
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #3E2723;
+}
+
+h2 {
+    border-bottom: 2px solid #C5A059;
+    display: inline-block;
+}
+
+/* 5. TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F5F5DC; /* Fondo crema para la tabla */
+}
+
+th {
+    background-color: #3E2723;
+    color: #F5F5DC;
     padding: 10px;
 }
 
-.reclamos{
-    font-size: 14px;
-    font-weight: normal;
-    margin-bottom: 15px;
+td {
+    border: 1px solid #D7CCC8; /* Un borde más suave */
+    padding: 10px;
+    text-align: center;
 }
 
-.clearfix {
-    clear: both;
+/* 6. PIE DE PÁGINA (FOOTER) - ESTILO COMO LA PRIMERA IMAGEN */
+footer {
+    background-color: #ffffff; /* Fondo blanco en el footer */
+    color: #000000; /* Texto negro para máxima legibilidad, como en la imagen */
+    padding: 5px 20px 20px 20px; /* Poco espacio arriba, más abajo */
+    font-size: 0.9em;
+    border-top: 1px solid #D7CCC8; /* Línea separadora suave */
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre columnas */
+    flex-wrap: wrap; /* Para que sea responsive */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.columna {
+    flex: 1; /* Distribución uniforme */
+    min-width: 250px;
+    margin: 10px;
+    text-align: left; /* Títulos y textos alineados a la izquierda */
+}
+
+/* Ajuste específico para los títulos del footer en la imagen */
+.columna h3 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 0; /* Sin espacio arriba de los títulos en el footer */
+    color: #000000;
+}
+
+.columna p {
+    margin: 5px 0; /* Poco espacio entre líneas de texto */
 }
 
 .copyright {
     text-align: center;
-    border-top: 1px solid #444;
-    margin-top: 30px;
+    border-top: 1px solid #D7CCC8; /* Línea separadora */
     padding-top: 15px;
-    clear: both;
+    margin-top: 20px;
+    clear: both; /* Asegura que se ponga debajo de las columnas */
+    width: 100%;
 }
-table{
-    text-align: center;
+
+.copyright p {
+    margin: 0;
 }
