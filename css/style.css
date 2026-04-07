@@ -1,11 +1,3 @@
-¡Entendido! Aquí tienes el CSS completo y definitivo para tu index.html.
-
-He consolidado todo lo que hemos hablado: la paleta de colores de la cafetería, la fuente elegante unificada, el efecto :hover interactivo en el menú, y he eliminado cualquier estilo automático a las imágenes para que se vean tal cual tú las pongas en el HTML.
-
-Copia todo este código y reemplaza el contenido de tu archivo css/style.css:
-
-CSS
-/* 1. CONFIGURACIÓN GENERAL */
 * {
     box-sizing: border-box;
     /* Fuente elegante y clásica para toda la página */
