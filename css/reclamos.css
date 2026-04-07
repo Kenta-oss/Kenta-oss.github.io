@@ -1,78 +1,70 @@
 body {
-    background-color: #F5F5DC; /* Fondo Crema cálido */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5DC;
+    font-family: Arial, sans-serif;
+    padding: 40px;
     margin: 0;
-    padding: 40px 20px;
-    color: #3E2723; /* Texto Marrón Café */
+    color: #3E2723;
 }
 
-/* 2. EL CONTENEDOR (La caja con vida) */
-.contenedor-reclamo {
-    background-color: #ffffff; /* Blanco para que brille */
-    max-width: 450px;
+form {
+    background-color: #FFFFFF;
+    max-width: 400px;
     margin: 0 auto;
     padding: 30px;
-    border-radius: 15px;
-    /* Un borde dorado grueso arriba para que se vea elegante */
+    border-radius: 12px;
     border-top: 8px solid #C5A059; 
-    /* Un borde delgado café alrededor */
     border-left: 1px solid #D7CCC8;
     border-right: 1px solid #D7CCC8;
     border-bottom: 1px solid #D7CCC8;
 }
 
-/* 3. TÍTULO Y ETIQUETAS */
 h2 {
-    color: #3E2723;
-    font-size: 26px;
-    margin-bottom: 25px;
     text-align: center;
-    border-bottom: 2px solid #F5F5DC;
-    padding-bottom: 10px;
+    color: #3E2723;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    color: #3E2723;
     font-weight: bold;
-    font-size: 15px;
+    color: #3E2723;
+    font-size: 14px;
 }
 
-/* 4. CUADROS PARA ESCRIBIR (Súper simples) */
-input, 
-select, 
-textarea {
+input, select, textarea {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #C5A059; /* Bordes dorados para que tengan vida */
-    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #C5A059;
+    border-radius: 5px;
     box-sizing: border-box;
-    background-color: #FFFEF0; /* Un toque de crema suave dentro */
+    background-color: #FFFEF0;
     font-size: 16px;
 }
 
-/* 5. EL BOTÓN (Llamativo y fuerte) */
-.boton-enviar {
-    background-color: #3E2723; /* Marrón Café oscuro */
-    color: #F5F5DC; /* Letras Crema */
+input[type="submit"] {
+    background-color: #3E2723;
+    color: #F5F5DC;
     border: none;
     padding: 15px;
-    width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    border-radius: 8px;
     cursor: pointer;
-    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
 }
 
-/* 6. ENLACE DE REGRESO */
 a {
-    text-decoration: none;
     display: block;
     text-align: center;
     margin-bottom: 20px;
-    color: #C5A059; /* Color Dorado */
+    color: #3E2723;
+    text-decoration: none;
     font-weight: bold;
+    border-bottom: 2px solid #C5A059;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
