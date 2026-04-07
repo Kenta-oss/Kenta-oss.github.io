@@ -74,67 +74,65 @@ h2 {
 }
 footer {
     background-color: #FFFFFF;
-    color: #000000;
-    padding: 60px 20px 30px;
+    color: #3E2723;
+    padding: 60px 0 30px 0;
     border-top: 1px solid #EEEEEE;
-    margin-top: auto;
     width: 100%;
-    clear: both;
+    margin-top: 80px;
 }
 
 .contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
-    gap: 50px;
-    text-align: center;
+    gap: 40px;
+    padding: 0 20px;
 }
 
 .columna {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .columna h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 20px;
+    text-transform: uppercase;
     color: #3E2723;
-    width: 100%;
 }
 
-.columna ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.columna ul li {
-    margin-bottom: 10px;
-}
-
-.columna ul li a {
+.columna p, 
+.columna a {
     text-decoration: none;
-    color: #3E2723;
-    transition: 0.3s;
+    color: #666666;
+    margin: 5px 0;
+    font-size: 0.95em;
+    display: block;
+    width: 100%;
 }
 
-.columna ul li a:hover {
+.columna a:hover {
     color: #C5A059;
 }
 
+.columna img {
+    display: block;
+    margin: 10px auto;
+}
+
 .copyright {
-    text-align: center;
-    border-top: 1px solid #EEEEEE;
-    padding-top: 30px;
-    margin-top: 50px;
-    font-size: 0.9em;
-    color: #666;
     width: 100%;
+    margin-top: 50px;
+    padding: 25px 20px 0 20px;
+    border-top: 1px solid #EEEEEE;
+    text-align: center;
+    font-size: 0.85em;
+    color: #999999;
 }
