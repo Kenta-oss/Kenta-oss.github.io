@@ -1,119 +1,154 @@
+¡Entendido! Aquí tienes el CSS completo y definitivo para tu index.html.
+
+He consolidado todo lo que hemos hablado: la paleta de colores de la cafetería, la fuente elegante unificada, el efecto :hover interactivo en el menú, y he eliminado cualquier estilo automático a las imágenes para que se vean tal cual tú las pongas en el HTML.
+
+Copia todo este código y reemplaza el contenido de tu archivo css/style.css:
+
+CSS
+/* 1. CONFIGURACIÓN GENERAL */
 * {
     box-sizing: border-box;
-    font-family: 'Cambria', 'Georgia', serif; /* Fuente unificada */
+    /* Fuente elegante y clásica para toda la página */
+    font-family: 'Cambria', 'Georgia', serif; 
 }
 
 body {
-    background-color: #F5F5DC; /* Crema */
-    color: #3E2723; /* Marrón Oscuro */
+    background-color: #F5F5DC; /* Fondo Crema suave */
+    color: #3E2723; /* Texto Marrón Café */
     margin: 0;
     line-height: 1.6;
 }
 
 /* 2. ENCABEZADO (HEADER) */
 header {
-    background-color: #3E2723; /* Marrón */
-    color: #F5F5DC; /* Crema */
-    padding: 30px;
+    background-color: #3E2723; /* Marrón oscuro */
+    color: #F5F5DC; /* Texto crema */
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: 4px solid #C5A059; /* Dorado Mate */
+    border-bottom: 5px solid #C5A059; /* Línea gruesa Dorada */
 }
 
 header h1 {
     margin: 10px 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    letter-spacing: 2px;
 }
 
-/* 3. NAVEGACIÓN (Estilo Dorado como pediste) */
+header p {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* 3. NAVEGACIÓN (NAV) - Estilo Dorado Mate */
 nav {
-    background-color: #C5A059; /* Dorado Mate */
+    background-color: #C5A059; /* Fondo Dorado Mate */
     padding: 15px 0;
     text-align: center;
+    position: sticky; /* Se queda arriba al bajar */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav a {
     text-decoration: none;
-    color: #3E2723;
+    color: #3E2723; /* Texto Marrón original */
     font-weight: bold;
     margin: 0 25px;
     font-size: 1.1em;
-    transition: 0.3s;
+    padding: 10px 20px;
+    border-radius: 4px;
+    /* Transición suave para el efecto hover */
+    transition: all 0.4s ease; 
+    display: inline-block;
 }
 
+/* EFECTO HOVER EN EL NAV */
 nav a:hover {
-    color: #F5F5DC;
+    background-color: #3E2723; /* El fondo cambia a Marrón */
+    color: #F5F5DC;             /* El texto cambia a Crema */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
 }
 
-/* 4. SECCIÓN DE VIDEO Y FOTO PRINCIPAL */
-section img, section video {
-    border: 3px solid #C5A059;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin: 15px;
-}
-
-/* 5. CONTENIDO PRINCIPAL (MAIN) */
+/* 4. CONTENIDO PRINCIPAL (MAIN) */
 main {
     max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #FFFFFF; /* Fondo blanco para que resalten los productos */
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #FFFFFF; /* Fondo blanco para limpieza visual */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 h2 {
     color: #3E2723;
-    border-bottom: 2px solid #C5A059;
+    border-bottom: 3px solid #C5A059; /* Subrayado Dorado */
     display: inline-block;
     padding-bottom: 5px;
+    margin-top: 30px;
 }
 
-/* 6. IMÁGENES DE PRODUCTOS (Starbucks y otros) */
-article img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* Para que no se deformen */
-    border: 1px solid #D7CCC8;
-    margin: 10px;
-    transition: transform 0.3s;
-}
-
-article img:hover {
-    transform: scale(1.05);
-    border-color: #C5A059;
-}
-
-/* 7. TABLA DE PRECIOS */
+/* 5. TABLA DE PRODUCTOS */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 th {
     background-color: #3E2723;
     color: #F5F5DC;
-    padding: 12px;
+    padding: 15px;
+    text-align: center;
 }
 
 td {
     border: 1px solid #D7CCC8;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
 
 tr:nth-child(even) {
-    background-color: #FDFDFD;
+    background-color: #fcfcfc;
 }
 
-/* 8. FOOTER (Estilo Blanco y Negro como tu imagen) */
+/* 6. FORMULARIO DE COMBOS */
+form {
+    background-color: #F5F5DC;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #C5A059;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #D7CCC8;
+    margin: 5px 0;
+}
+
+input[type="submit"] {
+    background-color: #3E2723;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #C5A059;
+    color: #3E2723;
+}
+
+/* 7. PIE DE PÁGINA (FOOTER) - Estilo Blanco y Negro */
 footer {
-    background-color: #FFFFFF;
-    color: #000000;
-    padding: 40px 20px 20px;
-    border-top: 1px solid #D7CCC8;
-    margin-top: 50px;
+    background-color: #FFFFFF; /* Fondo blanco puro */
+    color: #000000; /* Texto negro */
+    padding: 50px 20px 20px;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 60px;
 }
 
 .contenedor-footer {
@@ -131,15 +166,16 @@ footer {
 }
 
 .columna h3 {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #3E2723; /* Un toque de marrón para los títulos del footer */
 }
 
 .copyright {
     text-align: center;
     border-top: 1px solid #EEEEEE;
     padding-top: 20px;
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
 }
