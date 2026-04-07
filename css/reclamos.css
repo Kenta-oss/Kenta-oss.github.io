@@ -1,53 +1,78 @@
 body {
-    background-color: #F5F5DC; /* Color Crema */
-    font-family: Arial, sans-serif;
-    color: #3E2723; /* Color Café */
-    padding: 20px;
+    background-color: #F5F5DC; /* Fondo Crema cálido */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #3E2723; /* Texto Marrón Café */
 }
 
-/* 2. CAJA BLANCA DEL CENTRO */
+/* 2. EL CONTENEDOR (La caja con vida) */
 .contenedor-reclamo {
-    background-color: white;
-    width: 350px;
+    background-color: #ffffff; /* Blanco para que brille */
+    max-width: 450px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #3E2723; /* Borde café simple */
+    padding: 30px;
+    border-radius: 15px;
+    /* Un borde dorado grueso arriba para que se vea elegante */
+    border-top: 8px solid #C5A059; 
+    /* Un borde delgado café alrededor */
+    border-left: 1px solid #D7CCC8;
+    border-right: 1px solid #D7CCC8;
+    border-bottom: 1px solid #D7CCC8;
 }
 
 /* 3. TÍTULO Y ETIQUETAS */
 h2 {
+    color: #3E2723;
+    font-size: 26px;
+    margin-bottom: 25px;
     text-align: center;
+    border-bottom: 2px solid #F5F5DC;
+    padding-bottom: 10px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-}
-
-/* 4. CUADROS PARA ESCRIBIR (Inputs y Selects) */
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    box-sizing: border-box; /* Para que no se salga de la caja */
-}
-
-/* 5. EL BOTÓN (Usando una clase simple) */
-.boton-enviar {
-    background-color: #3E2723; /* Marrón */
-    color: white;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    margin-bottom: 8px;
+    color: #3E2723;
     font-weight: bold;
+    font-size: 15px;
+}
+
+/* 4. CUADROS PARA ESCRIBIR (Súper simples) */
+input, 
+select, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #C5A059; /* Bordes dorados para que tengan vida */
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #FFFEF0; /* Un toque de crema suave dentro */
+    font-size: 16px;
+}
+
+/* 5. EL BOTÓN (Llamativo y fuerte) */
+.boton-enviar {
+    background-color: #3E2723; /* Marrón Café oscuro */
+    color: #F5F5DC; /* Letras Crema */
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* 6. ENLACE DE REGRESO */
 a {
+    text-decoration: none;
     display: block;
     text-align: center;
-    color: #3E2723;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #C5A059; /* Color Dorado */
+    font-weight: bold;
 }
