@@ -71,3 +71,70 @@ h2 {
     border-bottom: 3px solid #C5A059;
     display: inline-block;
     padding-bottom:
+}
+footer {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 60px 20px 30px;
+    border-top: 1px solid #EEEEEE;
+    margin-top: auto;
+    width: 100%;
+    clear: both;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 50px;
+    text-align: center;
+}
+
+.columna {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columna h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #3E2723;
+    width: 100%;
+}
+
+.columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.columna ul li {
+    margin-bottom: 10px;
+}
+
+.columna ul li a {
+    text-decoration: none;
+    color: #3E2723;
+    transition: 0.3s;
+}
+
+.columna ul li a:hover {
+    color: #C5A059;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #EEEEEE;
+    padding-top: 30px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #666;
+    width: 100%;
+}
