@@ -1,87 +1,145 @@
 * {
-    font-family: 'Cambria', 'Georgia', serif;
     box-sizing: border-box;
+    font-family: 'Cambria', 'Georgia', serif; /* Fuente unificada */
 }
 
 body {
-    background-color: #F5F5DC; /* COLOR CREMA */
-    color: #3E2723; /* COLOR MARRÓN CAFÉ */
+    background-color: #F5F5DC; /* Crema */
+    color: #3E2723; /* Marrón Oscuro */
     margin: 0;
+    line-height: 1.6;
 }
 
-/* ENCABEZADO */
+/* 2. ENCABEZADO (HEADER) */
 header {
-    background-color: #3E2723; /* MARRÓN OSCURO */
-    color: #F5F5DC; /* TEXTO CREMA */
+    background-color: #3E2723; /* Marrón */
+    color: #F5F5DC; /* Crema */
+    padding: 30px;
     text-align: center;
-    padding: 20px;
+    border-bottom: 4px solid #C5A059; /* Dorado Mate */
 }
 
-/* NAVEGACIÓN (COMO TU IMAGEN) */
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+/* 3. NAVEGACIÓN (Estilo Dorado como pediste) */
 nav {
-    background-color: #C5A059; /* COLOR DORADO MATE */
-    padding: 20px;
+    background-color: #C5A059; /* Dorado Mate */
+    padding: 15px 0;
     text-align: center;
 }
 
 nav a {
-    color: #3E2723; /* TEXTO MARRÓN */
     text-decoration: none;
+    color: #3E2723;
     font-weight: bold;
-    margin: 0 30px;
-    font-size: 1.2em;
+    margin: 0 25px;
+    font-size: 1.1em;
+    transition: 0.3s;
 }
 
-/* CONTENIDO */
+nav a:hover {
+    color: #F5F5DC;
+}
+
+/* 4. SECCIÓN DE VIDEO Y FOTO PRINCIPAL */
+section img, section video {
+    border: 3px solid #C5A059;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 15px;
+}
+
+/* 5. CONTENIDO PRINCIPAL (MAIN) */
 main {
-    background-color: #FFFFFF; /* FONDO BLANCO PARA PRODUCTOS */
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #D7CCC8;
+    background-color: #FFFFFF; /* Fondo blanco para que resalten los productos */
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
-/* TABLA DE PRECIOS */
+h2 {
+    color: #3E2723;
+    border-bottom: 2px solid #C5A059;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* 6. IMÁGENES DE PRODUCTOS (Starbucks y otros) */
+article img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Para que no se deformen */
+    border: 1px solid #D7CCC8;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+article img:hover {
+    transform: scale(1.05);
+    border-color: #C5A059;
+}
+
+/* 7. TABLA DE PRECIOS */
 table {
     width: 100%;
     border-collapse: collapse;
-    border: 2px solid #3E2723;
+    margin: 20px 0;
 }
 
 th {
     background-color: #3E2723;
     color: #F5F5DC;
-    padding: 10px;
+    padding: 12px;
 }
 
-/* FOOTER (COMO TU IMAGEN) */
+td {
+    border: 1px solid #D7CCC8;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #FDFDFD;
+}
+
+/* 8. FOOTER (Estilo Blanco y Negro como tu imagen) */
 footer {
-    background-color: #FFFFFF; /* FONDO BLANCO */
-    color: #000000; /* TEXTO NEGRO */
-    padding: 40px 20px;
-    border-top: 1px solid #ccc;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 40px 20px 20px;
+    border-top: 1px solid #D7CCC8;
+    margin-top: 50px;
 }
 
 .contenedor-footer {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    flex-wrap: wrap;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .columna {
     flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
 }
 
 .columna h3 {
-    margin-top: 0;
     font-size: 1.1em;
-    color: #000000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .copyright {
     text-align: center;
-    margin-top: 30px;
+    border-top: 1px solid #EEEEEE;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    margin-top: 20px;
+    width: 100%;
 }
