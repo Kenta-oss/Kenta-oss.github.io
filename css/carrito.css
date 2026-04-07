@@ -1,65 +1,113 @@
-.cuerpo-carrito {
-    background-color: rgb(127 95 32);
-    font-family: Arial, sans-serif;
-    padding: 40px;
-    text-align: center;
+* {
+    font-family: 'Cambria', 'Georgia', serif;
+    box-sizing: border-box;
 }
-
-.contenedor-compra {
-    background-color: #a16e16;
-    width: 350px;
+body {
+    background-color: #F9F9F9; /* Gris muy claro para resaltar el carrito blanco */
+    margin: 0;
+    padding: 20px;
+}
+.contenedor-principal {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
-    border: 1px solid rgb(105 70 36);
 }
-
-h2 {
-    color: rgb(92, 52, 0);
-    margin-bottom: 20px;
-}
-
-.grupo-input {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-label {
+.boton-regreso {
+    text-decoration: none;
+    color: #3E2723;
     font-weight: bold;
     display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
+    margin-bottom: 20px;
 }
-
+/* CONTENEDOR FLEXIBLE (Izquierda productos, Derecha resumen) */
+.flex-carrito {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+/* SECCION IZQUIERDA: PRODUCTOS */
+.seccion-productos {
+    background: white;
+    flex: 2;
+    padding: 20px;
+    border-top: 3px solid #3E2723; /* Borde superior marrón */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.fila-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.info-prod { flex: 2; }
+.info-cantidad { flex: 1; margin-left: 20px;}
+label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}
 .control-formulario {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+    background: #fdfdfd;
 }
-
-#btn-confirmar {
-    background-color: rgb(82, 34, 2);
+.btn-vaciar {
+    margin-top: 20px;
+    background-color: #C5A059; /* Dorado Mate */
     color: white;
     border: none;
-    padding: 12px;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 10px 20px;
     border-radius: 4px;
-}
-
-#btn-confirmar:hover {
-    background-color: rgb(233, 143, 9);
-}
-
-.boton-regreso {
-    text-decoration: none;
-    color: rgb(201 160 0);
+    cursor: pointer;
     font-weight: bold;
-    display: block;
-    margin-bottom: 20px;
 }
+/* SECCION DERECHA: RESUMEN */
+.seccion-resumen {
+    background: #F5F5DC; /* Crema de la cafetería */
+    flex: 1;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.seccion-resumen h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #3E2723;
+    padding-bottom: 10px;
+}
+.linea-resumen {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.total {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #3E2723;
+}
+#btn-confirmar {
+    background-color: #3E2723; /* Marrón Oscuro */
+    color: #F5F5DC; /* Texto Crema */
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+#btn-confirmar:hover {
+    background-color: #C5A059; /* Cambia a Dorado al pasar el mouse */
+    color: #3E2723;
+}
+.check-terminos {
+    font-size: 12px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.check-terminos input { margin-right: 10px; }
