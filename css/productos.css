@@ -53,3 +53,15 @@ nav a:hover {
     color: #F5F5DC;
     transform: translateY(-3px);
 }
+* {
+    box-sizing: border-box;
+    font-family: 'Cambria', 'Georgia', serif; 
+}
+
+body {
+    background-color: #F5F5DC;
+    color: #3E2723;
+    margin: 0;
+    line-height: 1.6;
+}
+
