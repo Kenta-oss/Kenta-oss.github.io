@@ -1,11 +1,10 @@
-/* 1. CONFIGURACIÓN GENERAL */
 * {
     box-sizing: border-box;
-    font-family: 'Cambria', 'Georgia', serif; /* Misma fuente que el index */
+    font-family: 'Cambria', 'Georgia', serif;
 }
 
 body {
-    background-color: #F9F9F9; /* Gris muy claro para dar limpieza */
+    background-color: #F9F9F9;
     margin: 0;
     padding: 20px;
     color: #3E2723;
@@ -16,7 +15,6 @@ body {
     margin: 40px auto;
 }
 
-/* 2. BOTÓN DE REGRESO (Estilo sutil) */
 .boton-regreso {
     text-decoration: none;
     color: #3E2723;
@@ -31,17 +29,15 @@ body {
     color: #C5A059;
 }
 
-/* 3. ESTRUCTURA FLEXIBLE (Como la imagen de referencia) */
 .flex-carrito {
     display: flex;
     gap: 30px;
     align-items: flex-start;
 }
 
-/* 4. SECCIÓN IZQUIERDA: PRODUCTOS */
 .seccion-productos {
     background: #FFFFFF;
-    flex: 2; /* Ocupa más espacio */
+    flex: 2;
     padding: 30px;
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -91,10 +87,9 @@ label {
     font-size: 14px;
 }
 
-/* 5. SECCIÓN DERECHA: RESUMEN (Caja Crema) */
 .seccion-resumen {
-    background: #F5F5DC; /* Fondo Crema de la cafetería */
-    flex: 1; /* Ocupa menos espacio */
+    background: #F5F5DC;
+    flex: 1;
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #D7CCC8;
@@ -121,44 +116,4 @@ label {
     font-weight: bold;
     font-size: 1.4em;
     margin-top: 25px;
-    border-top: 2px solid #D7CCC8;
-    padding-top: 15px;
-}
-
-/* 6. BOTÓN DE PAGO (El que más resalta) */
-#btn-confirmar {
-    background-color: #3E2723; /* Marrón Oscuro */
-    color: #F5F5DC; /* Texto Crema */
-    width: 100%;
-    padding: 18px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-#btn-confirmar:hover {
-    background-color: #C5A059; /* Cambia a Dorado al pasar el mouse */
-    color: #3E2723;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* 7. CHECKBOX DE TÉRMINOS */
-.check-terminos {
-    margin-top: 20px;
-    font-size: 0.85em;
-    display: flex;
-    align-items: flex-start;
-}
-
-.check-terminos input {
-    margin-right: 10px;
-    margin-top: 3px;
-}
-
-/* NOTA: Las imágenes en el carrito NO tienen estilos 
-   para que se vean como tú las insertes */
+    border-top: 2
