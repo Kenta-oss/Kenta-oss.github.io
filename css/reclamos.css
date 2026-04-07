@@ -8,11 +8,11 @@ body {
 
 form {
     background-color: #FFFFFF;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 30px;
     border-radius: 12px;
-    border-top: 8px solid #C5A059; 
+    border-top: 10px solid #C5A059; 
     border-left: 1px solid #D7CCC8;
     border-right: 1px solid #D7CCC8;
     border-bottom: 1px solid #D7CCC8;
@@ -23,19 +23,18 @@ h2 {
     color: #3E2723;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-size: 22px;
 }
 
 label {
     font-weight: bold;
-    color: #3E2723;
-    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 input, select, textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 15px;
     border: 1px solid #C5A059;
     border-radius: 5px;
     box-sizing: border-box;
@@ -48,10 +47,9 @@ input[type="submit"] {
     color: #F5F5DC;
     border: none;
     padding: 15px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
     border-radius: 5px;
     width: 100%;
 }
