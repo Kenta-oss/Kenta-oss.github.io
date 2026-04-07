@@ -9,22 +9,38 @@
 <body>
 
     <header>
-        <img src="café.png.png" alt="Logo La Logia" width="150">
+        <img src="café.png.png" width="150" height="150" alt="Logo">
         <h1>La Logia de Miga & Taza</h1>
-        <p>Donde cada grano cuenta una historia</p>
+        <p>Café, infusiones y alimentos ligeros en un ambiente acogedor</p>
     </header>
 
     <nav>
-        <a href="index.html">Productos</a>
-        <a href="registro.html">Registro</a>
+        <a href="carrito/productos.html">Productos</a>
+        <a href="carrito/registro.html">Registro</a>
         <a href="carrito/carro.html">Carrito</a>
     </nav>
 
     <main>
         <section>
             <h2>Bienvenidos a nuestro rincón</h2>
-            <p>Disfruta de la mejor experiencia cafetera en Lima Sur. Contamos con granos seleccionados y el ambiente perfecto para tu tarde.</p>
-            <img src="cafeteria.jpeg" alt="Nuestro Local" width="600">
+            <p>Disfruta de la mejor experiencia cafetera en Lima Sur.</p>
+            
+            <img src="cafeteria.jpeg" width="600" alt="Local de la Logia">
+
+            <div style="margin: 20px 0; text-align: center;">
+                <video controls width="170" height="190">
+                    <source src="café.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+
+            <div style="margin: 20px 0; text-align: center;">
+                <p><small>Ambiente de la casa:</small></p>
+                <audio controls>
+                    <source src="cafe.mp3" type="audio/mp3">
+                    Tu navegador no soporta el audio.
+                </audio>
+            </div>
         </section>
 
         <section>
@@ -51,6 +67,20 @@
                 </tbody>
             </table>
         </section>
+
+        <section>
+            <h2>Nuestra Carta</h2>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <article>
+                    <h3>Bebidas</h3>
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=300&h=200&auto=format&fit=crop" width="300" height="200" alt="Bebidas">
+                </article>
+                <article>
+                    <h3>Alimentos</h3>
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=300&h=200&auto=format&fit=crop" width="300" height="200" alt="Alimentos">
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -58,8 +88,8 @@
             <div class="columna">
                 <h3>Ubicación del Local</h3>
                 <p>Lima, Perú</p>
-                <p><strong>Atención al cliente:</strong></p>
-                <p>(01) 456-898</p>
+                <p><strong>Atención al cliente:</strong> (01)456-898</p>
+                <p><strong>Teléfono Provincia:</strong> (044)478-007</p>
             </div>
             <div class="columna">
                 <h3>Avisos</h3>
@@ -67,7 +97,7 @@
             </div>
             <div class="columna">
                 <h3>Libro de reclamaciones</h3>
-                <img src="reclamaciones.png" alt="Libro de Reclamaciones" width="100">
+                <img src="https://data.muniplibre.gob.pe/images/libroreclamaciones.png" width="120" alt="Libro de Reclamaciones">
             </div>
         </div>
         <div class="copyright">
