@@ -1,39 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libro de Reclamación</title>
+    <title>Libro de Reclamaciones</title>
     <link rel="stylesheet" href="../css/reclamos.css">
 </head>
 <body>
-    <a href="../index.html">Regreso</a>
-    <h2>Libro de Reclamaciones</h2>
-    <form>
-        <label>Nombre:</label><br>
-        <input type="text" required><br><br>
 
-        <label>DNI:</label><br>
-        <input type="text" required pattern="[0-9]{8}"><br><br>
+    <form class="caja-formulario">
+        <h2>Libro de Reclamaciones</h2>
+        
+        <label class="etiqueta">Nombre:</label>
+        <input type="text" class="campo-texto" required>
 
-        <label>Correo:</label><br>
-        <input type="email" required><br><br>
+        <label class="etiqueta">DNI:</label>
+        <input type="text" class="campo-texto" required pattern="[0-9]{8}">
 
-        <label>Tipo:</label><br>
-        <select required>
+        <label class="etiqueta">Tipo:</label>
+        <select class="campo-texto" required>
             <option value="">Seleccione...</option>
             <option value="queja">Queja</option>
             <option value="reclamo">Reclamo</option>
         </select>
-        <br><br>
 
-        <label>Mensaje:</label><br>
-        <textarea rows="4" cols="30" required></textarea>
-        <br><br>
+        <label class="etiqueta">Mensaje:</label>
+        <textarea class="campo-texto" rows="4" required></textarea>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" class="boton-enviar">
     </form>
+
 </body>
-
 </html>
-
