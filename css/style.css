@@ -1,72 +1,51 @@
-/* 1. CONFIGURACIÓN GENERAL - Uniforme en todo el sitio */
 * {
-    box-sizing: border-box; /* Importante para el espaciado */
+    font-family: 'Cambria', 'Georgia', serif;
+    box-sizing: border-box;
 }
 
 body {
-    /* MISMA FUENTE DE LETRA EN TODA LA PÁGINA */
-    font-family: 'Cambria', 'Georgia', serif; /* Fuente elegante tipo serif, similar a tus imágenes */
-    background-color: #F5F5DC; /* Crema: Fondo principal */
-    color: #3E2723; /* Marrón Oscuro: Texto principal */
+    background-color: #F5F5DC; /* COLOR CREMA */
+    color: #3E2723; /* COLOR MARRÓN CAFÉ */
     margin: 0;
-    padding: 0;
-    line-height: 1.5;
 }
 
-/* 2. ENCABEZADO (HEADER) */
+/* ENCABEZADO */
 header {
-    background-color: #3E2723; /* Marrón Oscuro */
-    color: #F5F5DC; /* Crema para el texto */
-    padding: 20px;
+    background-color: #3E2723; /* MARRÓN OSCURO */
+    color: #F5F5DC; /* TEXTO CREMA */
     text-align: center;
-    border-bottom: 3px solid #C5A059; /* Detalle en Dorado Mate */
+    padding: 20px;
 }
 
-/* 3. NAVEGACIÓN (NAV) - ESTILO COMO LA SEGUNDA IMAGEN */
+/* NAVEGACIÓN (COMO TU IMAGEN) */
 nav {
-    background-color: #C5A059; /* Dorado Mate - Color principal del fondo del NAV */
-    padding: 15px 0; /* Espaciado vertical similar a la imagen */
+    background-color: #C5A059; /* COLOR DORADO MATE */
+    padding: 20px;
     text-align: center;
 }
 
 nav a {
+    color: #3E2723; /* TEXTO MARRÓN */
     text-decoration: none;
-    color: #3E2723; /* Marrón Oscuro para el texto */
-    font-size: 1.1em;
-    margin: 0 40px; /* Gran espaciado horizontal entre elementos */
     font-weight: bold;
-    display: inline-block; /* Ayuda con el espaciado horizontal */
+    margin: 0 30px;
+    font-size: 1.2em;
 }
 
-/* 4. CONTENIDO PRINCIPAL (MAIN) */
+/* CONTENIDO */
 main {
-    max-width: 900px; /* Un poco más ancho para dar aire */
-    margin: 30px auto;
+    background-color: #FFFFFF; /* FONDO BLANCO PARA PRODUCTOS */
+    max-width: 1000px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* Blanco para que las fotos resalten */
     border: 1px solid #D7CCC8;
-    border-radius: 5px;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-h1, h2, h3 {
-    font-weight: bold;
-    color: #3E2723;
-}
-
-h2 {
-    border-bottom: 2px solid #C5A059;
-    display: inline-block;
-}
-
-/* 5. TABLAS */
+/* TABLA DE PRECIOS */
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #F5F5DC; /* Fondo crema para la tabla */
+    border: 2px solid #3E2723;
 }
 
 th {
@@ -75,57 +54,34 @@ th {
     padding: 10px;
 }
 
-td {
-    border: 1px solid #D7CCC8; /* Un borde más suave */
-    padding: 10px;
-    text-align: center;
-}
-
-/* 6. PIE DE PÁGINA (FOOTER) - ESTILO COMO LA PRIMERA IMAGEN */
+/* FOOTER (COMO TU IMAGEN) */
 footer {
-    background-color: #ffffff; /* Fondo blanco en el footer */
-    color: #000000; /* Texto negro para máxima legibilidad, como en la imagen */
-    padding: 5px 20px 20px 20px; /* Poco espacio arriba, más abajo */
-    font-size: 0.9em;
-    border-top: 1px solid #D7CCC8; /* Línea separadora suave */
+    background-color: #FFFFFF; /* FONDO BLANCO */
+    color: #000000; /* TEXTO NEGRO */
+    padding: 40px 20px;
+    border-top: 1px solid #ccc;
 }
 
 .contenedor-footer {
     display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre columnas */
-    flex-wrap: wrap; /* Para que sea responsive */
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .columna {
-    flex: 1; /* Distribución uniforme */
-    min-width: 250px;
-    margin: 10px;
-    text-align: left; /* Títulos y textos alineados a la izquierda */
+    flex: 1;
 }
 
-/* Ajuste específico para los títulos del footer en la imagen */
 .columna h3 {
-    font-weight: bold;
-    font-size: 1em;
-    margin-top: 0; /* Sin espacio arriba de los títulos en el footer */
+    margin-top: 0;
+    font-size: 1.1em;
     color: #000000;
-}
-
-.columna p {
-    margin: 5px 0; /* Poco espacio entre líneas de texto */
 }
 
 .copyright {
     text-align: center;
-    border-top: 1px solid #D7CCC8; /* Línea separadora */
-    padding-top: 15px;
-    margin-top: 20px;
-    clear: both; /* Asegura que se ponga debajo de las columnas */
-    width: 100%;
-}
-
-.copyright p {
-    margin: 0;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
