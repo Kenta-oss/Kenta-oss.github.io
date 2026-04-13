@@ -10,14 +10,24 @@
 <div class="contenedor-principal">
     <a href="../index.html" class="boton-regreso">← Volver a la tienda</a>
     
-    <form class="flex-carrito">
+    <form class="flex-carrito" 
+          oninput="
+            let p1 = parseFloat(prod1.value);
+            let p2 = parseFloat(prod2.value);
+            let c1 = parseInt(cant1.value) || 0;
+            let c2 = parseInt(cant2.value) || 0;
+            let suma = (p1 * c1) + (p2 * c2);
+            subtotal.innerHTML = 'S/ ' + suma.toFixed(2);
+            total.innerHTML = 'S/ ' + suma.toFixed(2);
+          ">
+        
         <div class="seccion-productos">
             <h2>🛒 Carrito de compras</h2>
             
             <div class="fila-producto">
                 <div class="info-prod">
                     <label>Alimentos</label>
-                    <select id="prod1" class="control-formulario" onchange="calcular()">
+                    <select id="prod1" class="control-formulario">
                         <option value="15.00">Triple de tocino - S/ 15.00</option>
                         <option value="8.50">Galleta de Chocochips - S/ 8.50</option>
                         <option value="12.00">Torta de Chocolate - S/ 12.00</option>
@@ -27,14 +37,14 @@
                 </div>
                 <div class="info-cantidad">
                     <label>Cantidad</label>
-                    <input type="number" id="cant1" class="control-formulario" value="1" min="0" oninput="calcular()">
+                    <input type="number" id="cant1" class="control-formulario" value="1" min="0">
                 </div>
             </div>
 
             <div class="fila-producto">
                 <div class="info-prod">
                     <label>Bebida</label>
-                    <select id="prod2" class="control-formulario" onchange="calcular()">
+                    <select id="prod2" class="control-formulario">
                         <option value="6.00">Café Americano - S/ 6.00</option>
                         <option value="9.50">Mocachino Especial - S/ 9.50</option>
                         <option value="7.00">Jugo de Fresa - S/ 7.00</option>
@@ -44,11 +54,11 @@
                 </div>
                 <div class="info-cantidad">
                     <label>Cantidad</label>
-                    <input type="number" id="cant2" class="control-formulario" value="1" min="0" oninput="calcular()">
+                    <input type="number" id="cant2" class="control-formulario" value="1" min="0">
                 </div>
             </div>
             
-            <button type="reset" class="btn-vaciar" onclick="setTimeout(calcular, 10)">Vaciar carrito de compra</button>
+            <button type="reset" class="btn-vaciar">Vaciar carrito de compra</button>
         </div>
 
         <div class="seccion-resumen">
@@ -72,23 +82,5 @@
         </div>
     </form>
 </div>
-
-<script>
-// Función para que el número suba y baje automáticamente
-function calcular() {
-    var p1 = parseFloat(document.getElementById("prod1").value);
-    var p2 = parseFloat(document.getElementById("prod2").value);
-    var c1 = parseInt(document.getElementById("cant1").value) || 0;
-    var c2 = parseInt(document.getElementById("cant2").value) || 0;
-
-    var suma = (p1 * c1) + (p2 * c2);
-
-    document.getElementById("subtotal").innerHTML = "S/ " + suma.toFixed(2);
-    document.getElementById("total").innerHTML = "S/ " + suma.toFixed(2);
-}
-
-// Inicializar el cálculo al cargar
-window.onload = calcular;
-</script>
 </body>
 </html>
