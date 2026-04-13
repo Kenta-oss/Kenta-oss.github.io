@@ -6,68 +6,89 @@
     <title>Carrito - La Logia de Miga & Taza</title>
     <link rel="stylesheet" href="../css/carrito.css">
 </head>
-<body class="cuerpo-carrito">
-
-    <div class="contenedor-principal">
-        <a href="../index.html" class="boton-regreso">← Volver a la tienda</a>
-        
-        <div class="flex-carrito">
-            <div class="seccion-productos">
-                <h2>🛒 Carrito de compras</h2>
-                
-                <div class="fila-producto">
-                    <div class="info-prod">
-                        <label>Alimentos</label>
-                        <select class="control-formulario">
-                            <option>Triple de tocino</option>
-                            <option>Galleta de Chocochips</option>
-                            <option>Torta de Chocolate</option>
-                        </select>
-                    </div>
-                    <div class="info-cantidad">
-                        <label>Cantidad</label>
-                        <input type="number" class="control-formulario" value="1" min="0">
-                    </div>
+<body>
+<div class="contenedor-principal">
+    <a href="#" class="boton-regreso">← Volver a la tienda</a>
+    
+    <form class="flex-carrito">
+        <div class="seccion-productos">
+            <h2>🛒 Carrito de compras</h2>
+            
+            <div class="fila-producto">
+                <div class="info-prod">
+                    <label>Alimentos</label>
+                    <select id="prod1" class="control-formulario" onchange="calcular()">
+                        <option value="15.00">Triple de tocino - S/ 15.00</option>
+                        <option value="8.50">Galleta de Chocochips - S/ 8.50</option>
+                        <option value="12.00">Torta de Chocolate - S/ 12.00</option>
+                        <option value="10.50">Sandwich de Pollo - S/ 10.50</option>
+                        <option value="14.00">Empanada de Carne - S/ 14.00</option>
+                    </select>
                 </div>
-
-                <div class="fila-producto">
-                    <div class="info-prod">
-                        <label>Bebida</label>
-                        <select class="control-formulario">
-                            <option>Café Americano</option>
-                            <option>Mocachino</option>
-                            <option>Jugo de Fresa</option>
-                        </select>
-                    </div>
-                    <div class="info-cantidad">
-                        <label>Cantidad</label>
-                        <input type="number" class="control-formulario" value="1" min="0">
-                    </div>
+                <div class="info-cantidad">
+                    <label>Cantidad</label>
+                    <input type="number" id="cant1" class="control-formulario" value="1" min="0" oninput="calcular()">
                 </div>
-                
-                <button class="btn-vaciar">Vaciar carrito de compra</button>
             </div>
 
-            <div class="seccion-resumen">
-                <h3>Resumen</h3>
-                <div class="linea-resumen">
-                    <span>Subtotal</span>
-                    <span>S/ 00.00</span>
+            <div class="fila-producto">
+                <div class="info-prod">
+                    <label>Bebida</label>
+                    <select id="prod2" class="control-formulario" onchange="calcular()">
+                        <option value="6.00">Café Americano - S/ 6.00</option>
+                        <option value="9.50">Mocachino Especial - S/ 9.50</option>
+                        <option value="7.00">Jugo de Fresa - S/ 7.00</option>
+                        <option value="8.00">Té Caliente - S/ 8.00</option>
+                        <option value="11.00">Frappé de Vainilla - S/ 11.00</option>
+                    </select>
                 </div>
-                <hr>
-                <div class="linea-resumen total">
-                    <span>Total</span>
-                    <span>S/ 00.00</span>
+                <div class="info-cantidad">
+                    <label>Cantidad</label>
+                    <input type="number" id="cant2" class="control-formulario" value="1" min="0" oninput="calcular()">
                 </div>
-                
-                <div class="check-terminos">
-                    <input type="checkbox" id="terminos">
-                    <label for="terminos">Acepto los Términos y Condiciones</label>
-                </div>
-
-                <input type="submit" id="btn-confirmar" value="IR A PAGAR →">
             </div>
+            
+            <button type="reset" class="btn-vaciar" onclick="setTimeout(calcular, 10)">Vaciar carrito de compra</button>
         </div>
-    </div>
+
+        <div class="seccion-resumen">
+            <h3>Resumen</h3>
+            <div class="linea-resumen">
+                <span>Subtotal</span>
+                <span id="subtotal">S/ 21.00</span>
+            </div>
+            <hr>
+            <div class="linea-resumen total">
+                <span>Total</span>
+                <span id="total">S/ 21.00</span>
+            </div>
+            
+            <div class="check-terminos">
+                <input type="checkbox" id="terminos" required>
+                <label for="terminos">ACEPTO LOS TÉRMINOS Y CONDICIONES</label>
+            </div>
+
+            <button type="submit" id="btn-confirmar">IR A PAGAR →</button>
+        </div>
+    </form>
+</div>
+
+<script>
+// Función para que el número suba y baje automáticamente
+function calcular() {
+    var p1 = parseFloat(document.getElementById("prod1").value);
+    var p2 = parseFloat(document.getElementById("prod2").value);
+    var c1 = parseInt(document.getElementById("cant1").value) || 0;
+    var c2 = parseInt(document.getElementById("cant2").value) || 0;
+
+    var suma = (p1 * c1) + (p2 * c2);
+
+    document.getElementById("subtotal").innerHTML = "S/ " + suma.toFixed(2);
+    document.getElementById("total").innerHTML = "S/ " + suma.toFixed(2);
+}
+
+// Inicializar el cálculo al cargar
+window.onload = calcular;
+</script>
 </body>
 </html>
