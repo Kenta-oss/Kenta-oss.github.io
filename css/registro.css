@@ -1,66 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    background-color: rgb(255, 245, 225);
-    font-family: 'Segoe UI', sans-serif;
+    background-color: #F5F5DC;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-form {
+.volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #3E2723;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.registro-card {
     background-color: white;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
-    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
+    border-top: 5px solid #3E2723;
+}
+
+.logo-container img {
+    width: 80px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: rgb(82, 34, 2);
-    margin-bottom: 25px;
-    font-size: 20px;
+    color: #3E2723;
+    margin-bottom: 5px;
 }
 
-input[type="text"], 
-input[type="email"], 
-input[type="password"] {
+p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.campo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    color: #3E2723;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+input {
     width: 100%;
     padding: 12px;
-    margin-bottom: 15px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 input:focus {
     outline: none;
-    border-color: rgb(233, 143, 9);
+    border-color: #C5A059;
 }
 
-input[type="submit"] {
-    background-color: rgb(82, 34, 2);
+.btn-registrar {
+    background-color: #3E2723;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 15px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s;
+    letter-spacing: 1px;
 }
 
-input[type="submit"]:hover {
-    background-color: rgb(233, 143, 9);
-}
-
-a {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: rgb(82, 34, 2);
-    text-decoration: none;
-    font-weight: bold;
+.btn-registrar:hover {
+    background-color: #C5A059;
 }
