@@ -10,6 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(../fondo\ de\ registro.jpg);
+    background-size: cover;
 }
 
 .volver {
@@ -94,7 +96,3 @@ input:focus {
     background-color: #C5A059;
 }
 
-body{
-    background-image: url(../fondo\ de\ registro.jpg);
-    background-size: cover;
-}
