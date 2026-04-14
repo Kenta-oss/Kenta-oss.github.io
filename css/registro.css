@@ -88,6 +88,10 @@ input:focus {
     transition: background 0.3s;
     letter-spacing: 1px;
 }
+body{
+    background-image: url(../fondo\ de\ registro.jpg);
+    background-size: cover;
+}
 
 .btn-registrar:hover {
     background-color: #C5A059;
