@@ -143,3 +143,7 @@ h2 {
         font-size: 2em;
     }
 }
+.producto-card button{
+    background-color: #C5A059;
+    border-color:#b89553;
+}
